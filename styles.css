@@ -1,0 +1,32 @@
+.penguin {
+  background-image: url("https://nervin.net/img/ping.gif");
+  width: 25px;
+  height: 45px;
+  bottom: 50%;
+  position: fixed;
+  animation: walk 25s linear infinite;
+}
+
+@keyframes walk {
+
+  0%,
+  100% {
+    left: 0;
+    transform: translatex(-50%) scalex(-1);
+  }
+
+  49% {
+    left: 100%;
+    transform: translatex(-50%) scalex(-1);
+  }
+
+  50% {
+    left: 100%;
+    transform: translatex(-50%) scalex(1);
+  }
+
+  99% {
+    left: 0;
+    transform: translatex(-50%) scalex(1);
+  }
+}
